@@ -1,0 +1,20 @@
+:root{--bg:#0f1220;--panel:#171b2e;--line:#262c47;--text:#e7e9f5;--mut:#8b92b5;--acc:#7c8cff;--ok:#3ecf8e;--bad:#ff6b6b;--warn:#f5b84a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+nav{display:flex;gap:20px;align-items:center;padding:14px 28px;border-bottom:1px solid var(--line);background:var(--panel)}
+nav b{letter-spacing:.5px}main{max-width:1200px;margin:0 auto;padding:24px 28px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}.grow{flex:1}
+input,select,button{background:#0f1220;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit}
+button{cursor:pointer}button:hover{border-color:var(--acc)}button:disabled{opacity:.5;cursor:default}
+label{display:block;color:var(--mut);font-size:12px;margin-bottom:3px}.chk{display:inline-flex;gap:5px;margin-right:10px;color:var(--text);font-size:13px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:500;font-size:12px}tr.sel td{background:#1e2440}td.num{text-align:right;font-variant-numeric:tabular-nums}
+.badge{padding:2px 8px;border-radius:99px;font-size:12px;border:1px solid var(--line)}
+.succeeded{color:var(--ok)}.failed{color:var(--bad)}.running{color:var(--warn)}.cancelled{color:var(--mut)}
+.mut{color:var(--mut)}.err{border-color:var(--bad)}.pill{color:var(--warn);font-size:11px;margin-left:6px}
+details.step{border:1px solid var(--line);border-radius:10px;margin-bottom:8px;background:#12162a}
+details.step summary{padding:10px 14px;cursor:pointer;display:flex;gap:14px}details.step>div{padding:0 14px 12px}
+pre{white-space:pre-wrap;background:#0b0e1b;border:1px solid var(--line);border-radius:8px;padding:10px;margin:4px 0 10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:16px}.kpis .card{margin:0}
+.kpis .v{font-size:26px;font-weight:600}.pager{display:flex;gap:12px;align-items:center;justify-content:space-between}
